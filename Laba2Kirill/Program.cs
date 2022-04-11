@@ -268,6 +268,7 @@ namespace Laba_2_block_1
         //Block_3
         static void Main(string[] args)
         {
+            Console.WriteLine(".................................");
             Console.WriteLine("Виберiть номер завдання (1, 2, 3)");
             int choise = int.Parse(Console.ReadLine());
             switch (choise)
