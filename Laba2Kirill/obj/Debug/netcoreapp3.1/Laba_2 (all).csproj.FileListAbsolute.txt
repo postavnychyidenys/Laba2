@@ -1,0 +1,14 @@
+E:\PALM\Laba_2\Laba_2 (all)\bin\Debug\netcoreapp3.1\Laba_2 (all).exe
+E:\PALM\Laba_2\Laba_2 (all)\bin\Debug\netcoreapp3.1\Laba_2 (all).deps.json
+E:\PALM\Laba_2\Laba_2 (all)\bin\Debug\netcoreapp3.1\Laba_2 (all).runtimeconfig.json
+E:\PALM\Laba_2\Laba_2 (all)\bin\Debug\netcoreapp3.1\Laba_2 (all).runtimeconfig.dev.json
+E:\PALM\Laba_2\Laba_2 (all)\bin\Debug\netcoreapp3.1\Laba_2 (all).dll
+E:\PALM\Laba_2\Laba_2 (all)\bin\Debug\netcoreapp3.1\Laba_2 (all).pdb
+E:\PALM\Laba_2\Laba_2 (all)\obj\Debug\netcoreapp3.1\Laba_2 (all).csproj.AssemblyReference.cache
+E:\PALM\Laba_2\Laba_2 (all)\obj\Debug\netcoreapp3.1\Laba_2 (all).GeneratedMSBuildEditorConfig.editorconfig
+E:\PALM\Laba_2\Laba_2 (all)\obj\Debug\netcoreapp3.1\Laba_2 (all).AssemblyInfoInputs.cache
+E:\PALM\Laba_2\Laba_2 (all)\obj\Debug\netcoreapp3.1\Laba_2 (all).AssemblyInfo.cs
+E:\PALM\Laba_2\Laba_2 (all)\obj\Debug\netcoreapp3.1\Laba_2 (all).csproj.CoreCompileInputs.cache
+E:\PALM\Laba_2\Laba_2 (all)\obj\Debug\netcoreapp3.1\Laba_2 (all).dll
+E:\PALM\Laba_2\Laba_2 (all)\obj\Debug\netcoreapp3.1\Laba_2 (all).pdb
+E:\PALM\Laba_2\Laba_2 (all)\obj\Debug\netcoreapp3.1\Laba_2 (all).genruntimeconfig.cache
