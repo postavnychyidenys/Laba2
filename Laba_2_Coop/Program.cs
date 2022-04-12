@@ -8,7 +8,7 @@ namespace Laba_2_Coop
 {
     class Program
     {
-        // Виведення масивів
+        // Вивидення масивiв
         static void PrintOne(int[] array)
         {
             foreach (var item in array)
@@ -27,18 +27,18 @@ namespace Laba_2_Coop
                 Console.WriteLine();
             }
         }
-        // Заповнення масивів
+        // Заповнення масивiв
         static int[] ArrayFillingOne()
         {
             int[] array = new int[0];
             Console.WriteLine("Як заповнити масив?");
             Console.WriteLine("1 - заповнити масив випадковим чином");
-            Console.WriteLine("2 - заповнити масив вручну і в окремих рядках");
-            Console.WriteLine("3 - заповнити масив вручну і в одному рядку");
+            Console.WriteLine("2 - заповнити масив вручну i в окремих рядках");
+            Console.WriteLine("3 - заповнити масив вручну i в одному рядку");
             switch (int.Parse(Console.ReadLine()))
             {
                 case 1:
-                    Console.WriteLine("Введіть кількість елементів масиву");
+                    Console.WriteLine("Введiть кiлькiсть елементiв масиву");
                     int x = Convert.ToInt32(Console.ReadLine());
                     array = new int[x];
                     Random rand = new Random();
@@ -50,19 +50,19 @@ namespace Laba_2_Coop
                     PrintOne(array);
                     break;
                 case 2:
-                    Console.WriteLine("Введіть кількість елементів масиву");
+                    Console.WriteLine("Введiть кiлькiсть елементiв масиву");
                     int y = Convert.ToInt32(Console.ReadLine());
                     array = new int[y];
                     for (int i = 0; i < array.Length; i++)
                     {
-                        Console.WriteLine("Введіть елемент масиву");
+                        Console.WriteLine("Введiть елемент масиву");
                         array[i] = Convert.ToInt32(Console.ReadLine());
                     }
                     Console.WriteLine("\nВаш масив");
                     PrintOne(array);
                     break;
                 case 3:
-                    Console.WriteLine("Введіть елементи масиву через пробіл");
+                    Console.WriteLine("Введiть елементи масиву через пробiл");
                     string str = Console.ReadLine();
                     string[] split = str.Split();
                     array = new int[split.Length];
@@ -79,13 +79,13 @@ namespace Laba_2_Coop
         static int[][] ArrayFillingTwo()
         {
             Console.WriteLine("Як заповнити масив?");
-            Console.WriteLine("1 - заповнити масив вручну і в окремих рядках");
+            Console.WriteLine("1 - заповнити масив вручну i в окремих рядках");
             Console.WriteLine("2 - заповнити масив випадковим чином");
-            Console.WriteLine("3 - заповнити масив вручну і в одному рядку");
+            Console.WriteLine("3 - заповнити масив вручну i в одному рядку");
             int a = int.Parse(Console.ReadLine());
-            Console.WriteLine("Введіть кількість рядків");
+            Console.WriteLine("Введiть кiлькiсть рядкiв");
             int n = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Введіть кількість стовпчиків");
+            Console.WriteLine("Введiть кiлькiсть стовпчикiв");
             int m = Convert.ToInt32(Console.ReadLine());
             int[][] array = new int[n][];
             switch (a)
@@ -93,7 +93,7 @@ namespace Laba_2_Coop
                 case 1:
                     for (int i = 0; i < n; i++)
                     {
-                        Console.WriteLine("Введіть {0} елементів {1}-го рядка(всi в один рядок через пробiли)", m, i + 1);
+                        Console.WriteLine("Введiть {0} елементiв {1}-го рядка(всi в один рядок через пробiли)", m, i + 1);
                         array[i] = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
                     }
                     Console.WriteLine("\nВаш масив");
@@ -114,7 +114,7 @@ namespace Laba_2_Coop
                     break;
                 case 3:
                     int count = 0;
-                    Console.WriteLine("Введіть {0} елементів(всi в один рядок через пробiли)", n * m);
+                    Console.WriteLine("Введiть {0} елементiв(всi в один рядок через пробiли)", n * m);
                     string str = Console.ReadLine();
                     string[] split = str.Split();
                     for (int i = 0; i < n; i++)
@@ -133,7 +133,7 @@ namespace Laba_2_Coop
             return array;
         }
 
-        // Студент: Гриб С. Варіант: 5
+        // Студент: Гриб С. Варiант: 5
         // Блок 1
         static int[] DeletePairIndex(int[] array)
         {
@@ -189,7 +189,7 @@ namespace Laba_2_Coop
             return array2;
         }
 
-        // Студент: Поставничий Д. Варіант: 7
+        // Студент: Поставничий Д. Варiант: 7
         // Блок 1
         static void EraseOne(ref int[] array)
         {
@@ -229,11 +229,75 @@ namespace Laba_2_Coop
             Array.Resize(ref array, array.Length - count);
         }
 
-        // Студент: Гончаренко К. Варіант: 11
+        // Студент: Гончаренко К. Варiант: 11
         // Блок 1
-
+        static void IndexOfMax(int[] array)
+        {
+            int max = array[0];
+            int count = 0;
+            int count1 = 0;
+            for (int i = 1; i < array.Length; i++)
+            {
+                if (array[i] >= max)
+                {
+                    max = array[i];
+                }
+            }
+            foreach (int elem in array)
+            {
+                if (elem == max)
+                {
+                    count++;
+                }
+            }
+            if (max % 2 == 0)
+            {
+                int[] array1 = new int[array.Length + count];
+                for (int i = 0; i < array1.Length; i++)
+                {
+                    if (array[i - count1] == max)
+                    {
+                        array1[i] = max / 2;
+                        array[i - count1] = max / 2;
+                        i++;
+                        count1++;
+                    }
+                    array1[i] = array[i - count1];
+                }
+                Console.WriteLine();
+                foreach (int elem in array1)
+                {
+                    Console.Write(elem + " ");
+                }
+            }
+        }
         // Блок 2
-
+        static int IndexMax(int[][] array, int m, ref int indexMax)
+        {
+            int max = array[0][0];
+            for (int i = 0; i < array.Length; i++)
+            {
+                for (int j = 0; j < m; j++)
+                {
+                    if (array[i][j] > max)
+                    {
+                        max = array[i][j];
+                        indexMax = i;
+                    }
+                }
+            }
+            return indexMax;
+        }
+        static int[][] AddingALine(ref int[][] array, ref int indexMax, int m)
+        {
+            Array.Resize(ref array, array.Length + 1);
+            for (int i = array.Length - 2; i >= indexMax + 1; i--)
+            {
+                array[i + 1] = array[i];
+            }
+            array[indexMax + 1] = new int[m];
+            return array;
+        }
         // MAIN
         static void Main(string[] args)
         {
@@ -241,7 +305,7 @@ namespace Laba_2_Coop
             do
             {
                 Console.Clear();
-                Console.WriteLine("1 - вибрати перший блок\n2 - вибрати другий блок\n0 - закінчити виконання програми");
+                Console.WriteLine("1 - вибрати перший блок\n2 - вибрати другий блок\n0 - закiнчити виконання програми");
                 choise = int.Parse(Console.ReadLine());
                 switch (choise)
                 {
@@ -274,10 +338,10 @@ namespace Laba_2_Coop
             int[] array = new int[arrayOne.Length];
             do
             {
-                Console.WriteLine("\nВиберіть студента:");
-                Console.WriteLine("1 - Студент: Гриб С. Варіант: 5");
-                Console.WriteLine("2 - Студент: Поставничий Д. Варіант: 7");
-                Console.WriteLine("3 - Студент: Гончаренко К. Варіант: 11");
+                Console.WriteLine("\nВиберiть студента:");
+                Console.WriteLine("1 - Студент: Гриб С. Варiант: 5");
+                Console.WriteLine("2 - Студент: Поставничий Д. Варiант: 7");
+                Console.WriteLine("3 - Студент: Гончаренко К. Варiант: 11");
                 Console.WriteLine("0 - Повернутись назад");
                 choise = int.Parse(Console.ReadLine());
                 switch (choise)
@@ -300,7 +364,7 @@ namespace Laba_2_Coop
                     case 3:
                         {
                             arrayOne.CopyTo(array, 0);
-
+                            IndexOfMax(array);
                             Console.ReadLine();
                             break;
                         }
@@ -323,10 +387,10 @@ namespace Laba_2_Coop
             int[][] array = new int[arrayTwo.Length][];
             do
             {
-                Console.WriteLine("\nВиберіть студента:");
-                Console.WriteLine("1 - Студент: Гриб С. Варіант: 5");
-                Console.WriteLine("2 - Студент: Поставничий Д. Варіант: 7");
-                Console.WriteLine("3 - Студент: Гончаренко К. Варіант: 11");
+                Console.WriteLine("\nВиберiть студента:");
+                Console.WriteLine("1 - Студент: Гриб С. Варiант: 5");
+                Console.WriteLine("2 - Студент: Поставничий Д. Варiант: 7");
+                Console.WriteLine("3 - Студент: Гончаренко К. Варiант: 11");
                 Console.WriteLine("0 - Повернутись назад");
                 choise = int.Parse(Console.ReadLine());
                 switch (choise)
@@ -357,7 +421,7 @@ namespace Laba_2_Coop
                             }
                             else
                             {
-                                Console.WriteLine("\nМасиву не існує");
+                                Console.WriteLine("\nМасиву не iснує");
                             }
                             Console.ReadLine();
                             break;
@@ -369,7 +433,10 @@ namespace Laba_2_Coop
                                 array[i] = new int[arrayTwo[i].Length];
                                 arrayTwo[i].CopyTo(array[i], 0);
                             }
-
+                            int indexMax = 0;
+                            IndexMax(array, array[0].Length, ref indexMax);
+                            AddingALine(ref array, ref indexMax, array[0].Length);
+                            PrintTwo(array);
                             Console.ReadLine();
                             break;
                         }

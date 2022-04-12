@@ -12,3 +12,10 @@ D:\git\Laba2\Laba_2_Coop\obj\Debug\Laba_2_Coop.csproj.AssemblyReference.cache
 D:\git\Laba2\Laba_2_Coop\obj\Debug\Laba_2_Coop.csproj.CoreCompileInputs.cache
 D:\git\Laba2\Laba_2_Coop\obj\Debug\Laba_2_Coop.exe
 D:\git\Laba2\Laba_2_Coop\obj\Debug\Laba_2_Coop.pdb
+C:\Users\49743\Desktop\Laba2Kirill\Laba2\Laba_2_Coop\bin\Debug\Laba_2_Coop.exe.config
+C:\Users\49743\Desktop\Laba2Kirill\Laba2\Laba_2_Coop\bin\Debug\Laba_2_Coop.exe
+C:\Users\49743\Desktop\Laba2Kirill\Laba2\Laba_2_Coop\bin\Debug\Laba_2_Coop.pdb
+C:\Users\49743\Desktop\Laba2Kirill\Laba2\Laba_2_Coop\obj\Debug\Laba_2_Coop.csproj.AssemblyReference.cache
+C:\Users\49743\Desktop\Laba2Kirill\Laba2\Laba_2_Coop\obj\Debug\Laba_2_Coop.csproj.CoreCompileInputs.cache
+C:\Users\49743\Desktop\Laba2Kirill\Laba2\Laba_2_Coop\obj\Debug\Laba_2_Coop.exe
+C:\Users\49743\Desktop\Laba2Kirill\Laba2\Laba_2_Coop\obj\Debug\Laba_2_Coop.pdb

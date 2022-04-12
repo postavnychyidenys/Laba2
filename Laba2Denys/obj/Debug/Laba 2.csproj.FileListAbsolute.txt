@@ -5,3 +5,10 @@ D:\Visual Studio\Laba 2\obj\Debug\Laba 2.csproj.AssemblyReference.cache
 D:\Visual Studio\Laba 2\obj\Debug\Laba 2.csproj.CoreCompileInputs.cache
 D:\Visual Studio\Laba 2\obj\Debug\Laba 2.exe
 D:\Visual Studio\Laba 2\obj\Debug\Laba 2.pdb
+C:\Users\49743\Desktop\Laba2Kirill\Laba2\Laba2Denys\bin\Debug\Laba 2.exe.config
+C:\Users\49743\Desktop\Laba2Kirill\Laba2\Laba2Denys\bin\Debug\Laba 2.exe
+C:\Users\49743\Desktop\Laba2Kirill\Laba2\Laba2Denys\bin\Debug\Laba 2.pdb
+C:\Users\49743\Desktop\Laba2Kirill\Laba2\Laba2Denys\obj\Debug\Laba 2.csproj.AssemblyReference.cache
+C:\Users\49743\Desktop\Laba2Kirill\Laba2\Laba2Denys\obj\Debug\Laba 2.csproj.CoreCompileInputs.cache
+C:\Users\49743\Desktop\Laba2Kirill\Laba2\Laba2Denys\obj\Debug\Laba 2.exe
+C:\Users\49743\Desktop\Laba2Kirill\Laba2\Laba2Denys\obj\Debug\Laba 2.pdb
