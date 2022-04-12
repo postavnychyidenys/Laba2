@@ -8,7 +8,7 @@ namespace Laba_2_Coop
 {
     class Program
     {
-        // Вивід масивів
+        // Виведення масивів
         static void PrintOne(int[] array)
         {
             foreach (var item in array)
@@ -132,13 +132,63 @@ namespace Laba_2_Coop
             }
             return array;
         }
-        
+
         // Студент: Гриб С. Варіант: 5
         // Блок 1
-
+        static int[] DeletePairIndex(int[] array)
+        {
+            int count = 0;
+            for (int i = array.Length - 1; i >= 0; i--)
+            {
+                if (i % 2 == 0)
+                {
+                    for (int j = i + 1; j < array.Length; j++)
+                    {
+                        array[j - 1] = array[j];
+                    }
+                    count++;
+                }
+            }
+            Array.Resize(ref array, array.Length - count);
+            return array;
+        }
         // Блок 2
-        
-        
+        static int[][] Remove(int[][] array)
+        {
+            Console.WriteLine("Введiть дiапазон видалення рядкiв");
+            Console.WriteLine("Вiд");
+            int K1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("До");
+            int K2 = int.Parse(Console.ReadLine());
+            if (array.Length < K1 || array.Length < K2 || K1 <= 0 || K2 <= 0)
+            {
+                Console.WriteLine("Видалити неможливо, iндекс поза допустимими межами");
+                return array;
+            }
+            int[][] array2 = new int[array.Length - (K2 - K1 + 1)][];
+            int count = 0;
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (K1 < K2)
+                {
+                    if (i + 1 < K1 || i + 1 > K2)
+                    {
+                        array2[count] = array[i];
+                        count++;
+                    }
+                }
+                if (K1 > K2)
+                {
+                    if (i + 1 < K1 || i + 1 > K2)
+                    {
+                        array2[count] = array[i];
+                        count++;
+                    }
+                }
+            }
+            return array2;
+        }
+
         // Студент: Поставничий Д. Варіант: 7
         // Блок 1
         static void EraseOne(ref int[] array)
@@ -178,12 +228,12 @@ namespace Laba_2_Coop
             }
             Array.Resize(ref array, array.Length - count);
         }
-        
+
         // Студент: Гончаренко К. Варіант: 11
         // Блок 1
-        
+
         // Блок 2
-        
+
         // MAIN
         static void Main(string[] args)
         {
@@ -235,7 +285,7 @@ namespace Laba_2_Coop
                     case 1:
                         {
                             arrayOne.CopyTo(array, 0);
-
+                            PrintOne(DeletePairIndex(array));
                             Console.ReadLine();
                             break;
                         }
@@ -260,10 +310,10 @@ namespace Laba_2_Coop
                             break;
                         }
                     default:
-                    {
-                        Console.WriteLine("Введено неправильне число");
-                        break;
-                    }
+                        {
+                            Console.WriteLine("Введено неправильне число");
+                            break;
+                        }
                 }
             } while (choise != 0);
         }
@@ -288,7 +338,7 @@ namespace Laba_2_Coop
                                 array[i] = new int[arrayTwo[i].Length];
                                 arrayTwo[i].CopyTo(array[i], 0);
                             }
-
+                            PrintTwo(Remove(array));
                             Console.ReadLine();
                             break;
                         }
@@ -319,7 +369,7 @@ namespace Laba_2_Coop
                                 array[i] = new int[arrayTwo[i].Length];
                                 arrayTwo[i].CopyTo(array[i], 0);
                             }
-                            
+
                             Console.ReadLine();
                             break;
                         }
@@ -333,7 +383,7 @@ namespace Laba_2_Coop
                             Console.WriteLine("Введено неправильне число");
                             break;
                         }
-                    }
+                }
             } while (choise != 0);
         }
     }

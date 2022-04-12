@@ -5,3 +5,10 @@ D:\Visual Studio\Laba_2_Coop\bin\Debug\Laba_2_Coop.exe
 D:\Visual Studio\Laba_2_Coop\bin\Debug\Laba_2_Coop.pdb
 D:\Visual Studio\Laba_2_Coop\obj\Debug\Laba_2_Coop.exe
 D:\Visual Studio\Laba_2_Coop\obj\Debug\Laba_2_Coop.pdb
+D:\git\Laba2\Laba_2_Coop\bin\Debug\Laba_2_Coop.exe.config
+D:\git\Laba2\Laba_2_Coop\bin\Debug\Laba_2_Coop.exe
+D:\git\Laba2\Laba_2_Coop\bin\Debug\Laba_2_Coop.pdb
+D:\git\Laba2\Laba_2_Coop\obj\Debug\Laba_2_Coop.csproj.AssemblyReference.cache
+D:\git\Laba2\Laba_2_Coop\obj\Debug\Laba_2_Coop.csproj.CoreCompileInputs.cache
+D:\git\Laba2\Laba_2_Coop\obj\Debug\Laba_2_Coop.exe
+D:\git\Laba2\Laba_2_Coop\obj\Debug\Laba_2_Coop.pdb
