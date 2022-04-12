@@ -1,0 +1,7 @@
+D:\Visual Studio\Laba_2_Coop\obj\Debug\Laba_2_Coop.csproj.AssemblyReference.cache
+D:\Visual Studio\Laba_2_Coop\obj\Debug\Laba_2_Coop.csproj.CoreCompileInputs.cache
+D:\Visual Studio\Laba_2_Coop\bin\Debug\Laba_2_Coop.exe.config
+D:\Visual Studio\Laba_2_Coop\bin\Debug\Laba_2_Coop.exe
+D:\Visual Studio\Laba_2_Coop\bin\Debug\Laba_2_Coop.pdb
+D:\Visual Studio\Laba_2_Coop\obj\Debug\Laba_2_Coop.exe
+D:\Visual Studio\Laba_2_Coop\obj\Debug\Laba_2_Coop.pdb
