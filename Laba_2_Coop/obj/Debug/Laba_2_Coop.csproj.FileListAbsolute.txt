@@ -19,3 +19,10 @@ C:\Users\49743\Desktop\Laba2Kirill\Laba2\Laba_2_Coop\obj\Debug\Laba_2_Coop.cspro
 C:\Users\49743\Desktop\Laba2Kirill\Laba2\Laba_2_Coop\obj\Debug\Laba_2_Coop.csproj.CoreCompileInputs.cache
 C:\Users\49743\Desktop\Laba2Kirill\Laba2\Laba_2_Coop\obj\Debug\Laba_2_Coop.exe
 C:\Users\49743\Desktop\Laba2Kirill\Laba2\Laba_2_Coop\obj\Debug\Laba_2_Coop.pdb
+C:\Users\Xiaomi\Desktop\Laba_2_Git\Laba_2_Coop\bin\Debug\Laba_2_Coop.exe.config
+C:\Users\Xiaomi\Desktop\Laba_2_Git\Laba_2_Coop\bin\Debug\Laba_2_Coop.exe
+C:\Users\Xiaomi\Desktop\Laba_2_Git\Laba_2_Coop\bin\Debug\Laba_2_Coop.pdb
+C:\Users\Xiaomi\Desktop\Laba_2_Git\Laba_2_Coop\obj\Debug\Laba_2_Coop.csproj.AssemblyReference.cache
+C:\Users\Xiaomi\Desktop\Laba_2_Git\Laba_2_Coop\obj\Debug\Laba_2_Coop.csproj.CoreCompileInputs.cache
+C:\Users\Xiaomi\Desktop\Laba_2_Git\Laba_2_Coop\obj\Debug\Laba_2_Coop.exe
+C:\Users\Xiaomi\Desktop\Laba_2_Git\Laba_2_Coop\obj\Debug\Laba_2_Coop.pdb

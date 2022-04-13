@@ -191,7 +191,7 @@ namespace Laba_2_Coop
 
         // Студент: Поставничий Д. Варiант: 7
         // Блок 1
-        static void EraseOne(ref int[] array)
+        static int[] EraseOne(int[] array)
         {
             int count = 0;
             for (int i = array.Length - 1; i >= 0; i--)
@@ -206,9 +206,10 @@ namespace Laba_2_Coop
                 }
             }
             Array.Resize(ref array, array.Length - count);
+            return array;
         }
         // Блок 2
-        static void EraseTwo(ref int[][] array)
+        static int[][] EraseTwo(int[][] array)
         {
             int count = 0;
             for (int i = 0; i < array.Length; i++)
@@ -227,6 +228,7 @@ namespace Laba_2_Coop
                 }
             }
             Array.Resize(ref array, array.Length - count);
+            return array;
         }
 
         // Студент: Гончаренко К. Варiант: 11
@@ -288,7 +290,7 @@ namespace Laba_2_Coop
             }
             return indexMax;
         }
-        static int[][] AddingALine(ref int[][] array, ref int indexMax, int m)
+        static int[][] AddingALine(int[][] array, int indexMax, int m)
         {
             Array.Resize(ref array, array.Length + 1);
             for (int i = array.Length - 2; i >= indexMax + 1; i--)
@@ -356,8 +358,7 @@ namespace Laba_2_Coop
                     case 2:
                         {
                             arrayOne.CopyTo(array, 0);
-                            EraseOne(ref array);
-                            PrintOne(array);
+                            PrintOne(EraseOne(array));
                             Console.ReadLine();
                             break;
                         }
@@ -385,6 +386,7 @@ namespace Laba_2_Coop
         {
             int choise;
             int[][] array = new int[arrayTwo.Length][];
+            int[][] array1;
             do
             {
                 Console.WriteLine("\nВиберiть студента:");
@@ -413,11 +415,11 @@ namespace Laba_2_Coop
                                 array[i] = new int[arrayTwo[i].Length];
                                 arrayTwo[i].CopyTo(array[i], 0);
                             }
-                            EraseTwo(ref array);
-                            if (array.Length != 0)
+                            array1 = EraseTwo(array);
+                            if (array1.Length != 0)
                             {
                                 Console.WriteLine("\nПеретворений масив");
-                                PrintTwo(array);
+                                PrintTwo(array1);
                             }
                             else
                             {
@@ -435,8 +437,8 @@ namespace Laba_2_Coop
                             }
                             int indexMax = 0;
                             IndexMax(array, array[0].Length, ref indexMax);
-                            AddingALine(ref array, ref indexMax, array[0].Length);
-                            PrintTwo(array);
+                            array1 = AddingALine(array, indexMax, array[0].Length);
+                            PrintTwo(array1);
                             Console.ReadLine();
                             break;
                         }
